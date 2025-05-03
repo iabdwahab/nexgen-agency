@@ -33,5 +33,9 @@
 }
 
 body {
-  @apply font-roboto-flex;
+  @apply font-roboto-flex text-sm lg:text-base 2xl:text-lg bg-dark-06 text-grey-40;
+}
+
+.container {
+  @apply px-2 max-w-7xl;
 }
