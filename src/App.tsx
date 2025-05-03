@@ -1,4 +1,10 @@
+import Header from './components/header/Index';
+
 function App() {
-  return <h1 className="bg-black text-white">Hello, World!</h1>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 export default App;
