@@ -1,4 +1,5 @@
 import SectionHeading from "../global/SectionHeading";
+import ReasonCard from "./ReasonCard";
 
 function ReasonsToChoose() {
   return (
@@ -6,6 +7,12 @@ function ReasonsToChoose() {
       <div className="container">
         <div className="section-container">
           <SectionHeading>Reasons to Choose NexGen for Your Digital Journey</SectionHeading>
+          <div className="mt-4 grid gap-2 md:grid-cols-2 lg:grid-cols-4">
+            <ReasonCard />
+            <ReasonCard />
+            <ReasonCard />
+            <ReasonCard />
+          </div>
         </div>
       </div>
     </section>
