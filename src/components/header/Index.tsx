@@ -1,8 +1,11 @@
+import { useState } from "react";
 import Logo from "../global/Logo";
 import MenuButton from "./MenuButton";
 import Navbar from "./Navbar";
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header>
       <div className="container mt-5">
@@ -10,8 +13,8 @@ function Header() {
           <a href="#">
             <Logo />
           </a>
-          <MenuButton />
-          <Navbar />
+          <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
+          <Navbar isOpen={isOpen} />
         </div>
       </div>
     </header>
