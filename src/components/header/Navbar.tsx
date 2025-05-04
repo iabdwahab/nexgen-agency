@@ -1,9 +1,9 @@
-import { navbarLinksElements } from '../../data/Navbar';
+import { navbarLinksElements } from "../../data/Navbar";
 
 function Navbar() {
   return (
-    <nav className="font-medium font-roboto-mono uppercase text-grey-50 absolute lg:relative bg-dark-10 left-0 top-[calc(100%+15px)] w-full lg:w-fit rounded-[10px] px-3 py-6 lg:px-0 lg:py-0">
-      <ul className="flex flex-col lg:flex-row gap-2">{navbarLinksElements}</ul>
+    <nav className="font-roboto-mono text-grey-50 bg-dark-10 absolute top-[calc(100%+15px)] left-0 w-full rounded-[10px] px-3 py-6 font-medium uppercase lg:relative lg:w-fit lg:px-0 lg:py-0">
+      <ul className="flex flex-col gap-2 lg:flex-row">{navbarLinksElements}</ul>
     </nav>
   );
 }

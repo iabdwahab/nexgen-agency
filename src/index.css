@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
   --color-orange-60: #cebd63;
@@ -28,18 +28,18 @@
   --color-grey-97: #f7f7f7;
   --color-grey-99: #fcfcfc;
 
-  --font-roboto-flex: 'Roboto Flex', sans-serif;
-  --font-roboto-mono: 'Roboto Mono', monospace;
+  --font-roboto-flex: "Roboto Flex", sans-serif;
+  --font-roboto-mono: "Roboto Mono", monospace;
 }
 
 body {
-  @apply font-roboto-flex text-sm lg:text-base 2xl:text-lg bg-dark-06 text-grey-40;
+  @apply font-roboto-flex bg-dark-06 text-grey-40 text-sm lg:text-base 2xl:text-lg;
 }
 
 .container {
-  @apply px-2 max-w-7xl mx-auto;
+  @apply mx-auto max-w-7xl px-2;
 }
 
 button {
-  @apply cursor-pointer hover:opacity-85 focus:opacity-85 active:opacity-75 duration-100;
+  @apply cursor-pointer duration-100 hover:opacity-85 focus:opacity-85 active:opacity-75;
 }

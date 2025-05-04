@@ -1,6 +1,6 @@
-import logoLarge from '/logo/logo-large.svg';
-import logoMedium from '/logo/logo-medium.svg';
-import logoSmall from '/logo/logo-small.svg';
+import logoLarge from "/logo/logo-large.svg";
+import logoMedium from "/logo/logo-medium.svg";
+import logoSmall from "/logo/logo-small.svg";
 
 function Logo() {
   return (
