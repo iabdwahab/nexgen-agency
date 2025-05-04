@@ -30,6 +30,8 @@
 
   --font-roboto-flex: "Roboto Flex", sans-serif;
   --font-roboto-mono: "Roboto Mono", monospace;
+
+  --spacing-section-margin: 60px;
 }
 
 body {
@@ -42,4 +44,8 @@ body {
 
 button {
   @apply cursor-pointer duration-100 hover:opacity-85 focus:opacity-85 active:opacity-75;
+}
+
+.section-container {
+  @apply border-dark-10 rounded-2xl border p-2.5;
 }
