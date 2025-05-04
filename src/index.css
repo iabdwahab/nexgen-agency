@@ -33,7 +33,7 @@
 }
 
 body {
-  @apply font-roboto-flex bg-dark-06 text-grey-40 text-sm lg:text-base 2xl:text-lg;
+  @apply font-roboto-flex bg-dark-06 text-grey-40 text-sm lg:text-base;
 }
 
 .container {
