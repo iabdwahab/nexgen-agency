@@ -1,4 +1,10 @@
+import HomeLanding from "../components/home_landing/Index";
+
 function Home() {
-  return <h1>Home Page</h1>;
+  return (
+    <>
+      <HomeLanding />
+    </>
+  );
 }
 export default Home;
