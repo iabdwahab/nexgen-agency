@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import IconCard from "../global/IconCard";
 import IconTextLink from "../global/IconTextLink";
 import { homeOurServiceInterface } from "../../types/ourServices";
+import BookCallButton from "../global/BookCallButton";
 
 function ServiceCard({ title, description, startPrice, icon, link }: homeOurServiceInterface) {
   return (
@@ -19,9 +19,7 @@ function ServiceCard({ title, description, startPrice, icon, link }: homeOurServ
         <p>{description}</p>
       </div>
 
-      <Link to={link} className="bg-orange-60 text-dark-06 flex items-center justify-center rounded-lg p-3.5 font-medium uppercase hover:opacity-85 hover:focus:opacity-85 hover:active:opacity-75 lg:hidden">
-        book a call
-      </Link>
+      <BookCallButton link={link} className="lg:hidden" />
     </div>
   );
 }
