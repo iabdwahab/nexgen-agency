@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import plusIcon from "/icons/plus-icon.svg";
 
 function Accordion() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,11 +9,13 @@ function Accordion() {
   }
 
   return (
-    <div className="bg-dark-10 rounded-xl px-7">
-      <button onClick={toggleAccordion} className="flex w-full items-center justify-between py-5">
-        <h3 className="text-orange-95 text-lg text-[22px] font-medium">How long does it take to complete a web development project?</h3>
-        <span className="bg-dark-12 border-dark-20 rounded-full p-2.5">
-          <img src={plusIcon} alt="Icon" className={`${isOpen ? "rotate-45" : ""} h-5 w-5 duration-350 lg:h-6 lg:w-6`} />
+    <div className="bg-dark-10 h-fit rounded-xl px-7">
+      <button onClick={toggleAccordion} className="flex w-full items-center justify-between gap-2 py-5">
+        <h3 className="text-orange-95 text-left text-lg font-medium lg:text-[22px]">How long does it take to complete a web development project?</h3>
+        <span className="bg-dark-12 border-dark-20 flex items-center justify-center rounded-full p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={`${isOpen ? "rotate-45" : ""} text-orange-80 h-5 w-5 duration-350 lg:h-6 lg:w-6`}>
+            <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
+          </svg>
         </span>
       </button>
 
