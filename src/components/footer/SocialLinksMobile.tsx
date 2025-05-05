@@ -8,7 +8,7 @@ import behanceIcon from "/icons/behance.svg";
 
 function SocialLinksMobile() {
   return (
-    <div className="my-4 grid grid-cols-4 gap-2.5">
+    <div className="my-4 grid grid-cols-4 gap-2.5 lg:hidden">
       <Link to="#">
         <IconCard icon={instagramIcon} />
       </Link>
