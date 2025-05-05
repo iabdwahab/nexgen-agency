@@ -1,5 +1,5 @@
+import { ourWorksElements } from "../../data/OurWorks";
 import SectionHeading from "../global/SectionHeading";
-import WorkCard from "./WorkCard";
 
 function OurWorks() {
   return (
@@ -7,10 +7,7 @@ function OurWorks() {
       <div className="container">
         <div className="section-container">
           <SectionHeading>Our Works</SectionHeading>
-          <div className="mt-4 grid gap-2">
-            <WorkCard />
-            <WorkCard />
-          </div>
+          <div className="mt-4 grid gap-2">{ourWorksElements}</div>
         </div>
       </div>
     </section>
