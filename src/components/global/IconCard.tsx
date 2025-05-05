@@ -1,6 +1,6 @@
-function IconCard({ icon }: { icon: string }) {
+function IconCard({ icon, className }: { icon: string; className?: string }) {
   return (
-    <div className="bg-dark-12 border-dark-20 w-fit rounded-xl border p-3.5">
+    <div className={`${className} bg-dark-12 border-dark-20 flex items-center justify-center rounded-xl border p-3.5`}>
       <img src={icon} alt="Icon" className="h-6 w-6" />
     </div>
   );
