@@ -1,16 +1,13 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
+import { faqInterface } from "../../types/faqs";
 
-function Accordion({ question, answer }: { question: string; answer: string }) {
-  const [isOpen, setIsOpen] = useState(false);
+function Accordion({ data, isOpen, changeOpenedAccordion }: { data: faqInterface; isOpen: boolean; changeOpenedAccordion: (id: number) => void }) {
+  const { id, question, answer } = data;
   const contentRef = useRef<HTMLDivElement>(null);
-
-  function toggleAccordion() {
-    setIsOpen((prev) => !prev);
-  }
 
   return (
     <div className="bg-dark-10 h-fit rounded-xl px-7">
-      <button onClick={toggleAccordion} className="flex w-full items-center justify-between gap-2 py-5">
+      <button onClick={() => changeOpenedAccordion(id)} className="flex w-full items-center justify-between gap-2 py-5">
         <h3 className="text-orange-95 text-left text-lg font-medium lg:text-[22px]">{question}</h3>
         <span className="bg-dark-12 border-dark-20 flex items-center justify-center rounded-full p-2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={`${isOpen ? "rotate-45" : ""} text-orange-80 h-5 w-5 duration-350 lg:h-6 lg:w-6`}>
@@ -19,7 +16,7 @@ function Accordion({ question, answer }: { question: string; answer: string }) {
         </span>
       </button>
 
-      <div ref={contentRef} className={`max-h-0 overflow-hidden duration-350`} style={{ maxHeight: isOpen ? contentRef.current?.scrollHeight + "px" : "0" }}>
+      <div ref={contentRef} className={`overflow-hidden duration-350`} style={{ maxHeight: isOpen ? contentRef.current?.scrollHeight + "px" : "0" }}>
         <hr className={`${isOpen ? "w-full" : "w-0"} bg-dark-20 mx-auto h-[1px] border-none duration-350`} />
         <h4 className="py-4">{answer}</h4>
       </div>
