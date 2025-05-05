@@ -4,7 +4,7 @@ function PrimaryBlock() {
   return (
     <div className="bg-dark-10 flex flex-col gap-10 rounded-xl p-6 lg:p-10">
       <div className="flex flex-col flex-wrap gap-4 lg:flex-row lg:items-start">
-        <h1 className="text-orange-95 flex flex-col text-3xl font-semibold whitespace-nowrap uppercase md:text-5xl lg:gap-4 lg:text-[55px]">
+        <h1 className="text-orange-95 flex flex-col text-3xl font-semibold uppercase md:text-5xl lg:gap-4 lg:text-[55px]">
           <span>digital solutions</span>
           <span>that drive success</span>
         </h1>
