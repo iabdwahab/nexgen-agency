@@ -1,5 +1,5 @@
+import { faqsElements } from "../../data/FAQs";
 import SectionHeading from "../global/SectionHeading";
-import Accordion from "./Accordion";
 import AskForm from "./AskForm";
 
 function FAQs() {
@@ -9,13 +9,7 @@ function FAQs() {
         <div className="section-container">
           <SectionHeading>Frequently Asked Questions</SectionHeading>
           <div className="mt-2 grid gap-2 lg:grid-cols-[2fr_1fr]">
-            <div className="grid justify-start gap-2">
-              <Accordion />
-              <Accordion />
-              <Accordion />
-              <Accordion />
-              <Accordion />
-            </div>
+            <div className="grid gap-2">{faqsElements}</div>
             <AskForm />
           </div>
         </div>
