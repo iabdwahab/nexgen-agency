@@ -1,14 +1,11 @@
-import SocialLinksDesktop from "./SocialLinksDesktop";
-import SocialLinksMobile from "./SocialLinksMobile";
+import SocialLinks from "../social_links/Index";
 
 function Footer() {
   return (
     <footer>
       <div className="container">
         <div>
-          <SocialLinksDesktop />
-          <SocialLinksMobile />
-          <div></div>
+          <SocialLinks />
         </div>
       </div>
     </footer>

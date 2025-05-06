@@ -1,6 +1,6 @@
 import { socialLinksDesktopElements } from "../../data/SocialLinks";
 
 function SocialLinksDesktop() {
-  return <div className="grid grid-cols-2 gap-4">{socialLinksDesktopElements}</div>;
+  return <div className="hidden grid-cols-2 gap-4 lg:grid">{socialLinksDesktopElements}</div>;
 }
 export default SocialLinksDesktop;

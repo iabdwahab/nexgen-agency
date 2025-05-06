@@ -4,8 +4,8 @@ import instagramIcon from "/icons/instagram.svg";
 import twitterIcon from "/icons/twitter.svg";
 import dribbbleIcon from "/icons/dribbble.svg";
 import behanceIcon from "/icons/behance.svg";
-import SocialLinkMobileCard from "../components/footer/SocialLinkMobileCard";
-import SocialLinkDesktopCard from "../components/footer/SocialLinkDesktopCard";
+import SocialLinkMobileCard from "../components/social_links/SocialLinkMobileCard";
+import SocialLinkDesktopCard from "../components/social_links/SocialLinkDesktopCard";
 
 export const socialLinksList: SocialLinkInterface[] = [
   {
