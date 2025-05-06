@@ -1,13 +1,6 @@
-import SocialLinkDesktopCard from "./SocialLinkDesktopCard";
+import { socialLinksDesktopElements } from "../../data/SocialLinks";
 
 function SocialLinksDesktop() {
-  return (
-    <div className="grid grid-cols-2 gap-4">
-      <SocialLinkDesktopCard />
-      <SocialLinkDesktopCard />
-      <SocialLinkDesktopCard />
-      <SocialLinkDesktopCard />
-    </div>
-  );
+  return <div className="grid grid-cols-2 gap-4">{socialLinksDesktopElements}</div>;
 }
 export default SocialLinksDesktop;
