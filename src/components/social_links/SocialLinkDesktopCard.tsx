@@ -6,7 +6,7 @@ function SocialLinkDesktopCard({ data }: { data: SocialLinkInterface }) {
   const { icon, link, title, description } = data;
 
   return (
-    <div className="bg-dark-12 rounded-xl p-8">
+    <div className="bg-dark-10 rounded-xl p-7">
       <div className="flex items-center justify-between">
         <IconCard icon={icon} />
         <IconTextLink link={link} />

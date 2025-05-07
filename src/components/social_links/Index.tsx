@@ -1,9 +1,9 @@
 import SocialLinksDesktop from "./SocialLinksDesktop";
 import SocialLinksMobile from "./SocialLinksMobile";
 
-function SocialLinks() {
+function SocialLinks({ className }: { className?: string }) {
   return (
-    <div>
+    <div className={className}>
       <SocialLinksDesktop />
       <SocialLinksMobile />
     </div>
